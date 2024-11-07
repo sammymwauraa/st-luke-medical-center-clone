@@ -1,0 +1,486 @@
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* utility classes */
+.section-heading {
+  width: fit-content;
+  text-align: center;
+  border-bottom: 2px solid #647cdd;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+.cta-blue {
+  background-color: #0d6efd;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+.section-padding {
+  padding: 20px 60px;
+}
+
+/* contacts banner */
+.contacts-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.socials a {
+  margin: 0px 10px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+header > a:first-child {
+  display: flex;
+  gap: 12px;
+}
+header img {
+  height: 30px;
+}
+header h1 {
+  font-size: 25px;
+}
+header li {
+  position: relative;
+}
+header nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+header .dropdown-menu:hover {
+  cursor: pointer;
+}
+header .dropdown-list {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 95%;
+  left: 0px;
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+}
+header .dropdown-list li {
+  margin-bottom: 17px;
+}
+header .dropdown-list:hover {
+  display: block;
+}
+#caret {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#dropdown-menu:hover + .dropdown-list {
+  display: block;
+}
+header nav a {
+  padding: 8px;
+}
+header nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: #0d6efd;
+}
+
+#mobile-menu {
+  background-color: transparent;
+  border: none;
+}
+#mobile-menu ion-icon {
+  font-size: 25px;
+}
+/* main */
+/* hero section */
+.hero {
+  height: 80vh;
+  padding: 20px 60px;
+  background-image: url(./images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero h2 {
+  color: white;
+  margin-top: 200px;
+}
+.hero .cta-blue {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* why us  */
+.why-us {
+  padding: 20px 60px;
+}
+.why-us-content {
+  display: flex;
+  gap: 25px;
+  margin-top: -150px;
+}
+.blue-intro {
+  width: calc(30% - 10px);
+  background-color: #647cdd;
+  color: white;
+  padding: 23px;
+  border-radius: 5px;
+}
+.blue-intro h2 {
+  margin-bottom: 20px;
+}
+.blue-intro a {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+.reasons {
+  width: calc(70% - 10px);
+  display: flex;
+  gap: 25px;
+}
+.reason {
+  background-color: white;
+  box-shadow: 0px 0px 3px grey;
+  flex: 1;
+  text-align: center;
+  padding: 23px;
+  border-radius: 11px;
+}
+.reason h3 {
+  margin: 20px 0px;
+}
+.reason ion-icon {
+  color: #647cdd;
+  font-size: 30px;
+}
+/* about us section */
+.about-us {
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+.about-text,
+.about-image {
+  flex: 1;
+}
+.about-image img {
+  width: 100%;
+}
+.about-content {
+  display: flex;
+  gap: 20px;
+}
+.about-content p {
+  color: rgb(36, 36, 36);
+}
+.about-text > div {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about-text > div ion-icon {
+  color: #647cdd;
+  /* border: 1px solid #647cdd; */
+  font-size: 100px;
+  padding: 20px;
+}
+.about-text > div ion-icon:hover {
+  background-color: #647cdd;
+  color: white;
+}
+/* our services section */
+.our-services {
+  padding: 20px 60px;
+  background-color: rgba(13, 109, 253, 0.1);
+}
+.our-services > p {
+  text-align: center;
+}
+.services-cont {
+  display: flex;
+  text-align: center;
+  padding: 25px;
+  gap: 20px;
+}
+.service-item {
+  padding: 70px 20px;
+  flex: 1;
+  transition: all 0.1s linear;
+  min-width: 300px;
+}
+.service-item ion-icon {
+  font-size: 50px;
+  background-color: #647cdd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -8px -8px rgba(100, 124, 221, 0.384);
+  color: white;
+  transition: all 0.2s linear;
+}
+.service-item:hover ion-icon {
+  background-color: white;
+  color: #0d6efd;
+  box-shadow: -8px -8px #0d6efd;
+}
+.service-item h3 {
+  margin: 30px 0px;
+}
+.service-item:hover {
+  background-color: #647cdd;
+  color: white;
+}
+.our-services .cta-blue {
+  width: 150px;
+  display: block;
+}
+/* appointment section */
+.appointment {
+  padding: 20px 60px;
+  background-color: rgba(13, 109, 253, 0.1);
+}
+form {
+  width: 100%;
+}
+form .inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+form input {
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: calc(25% - 9px);
+}
+form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 5px;
+  height: 100px;
+}
+form input:focus,
+form textarea:focus {
+  outline-color: #647cdd;
+  outline-width: 7px;
+}
+
+
+/* doctors */
+
+.doctors-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7faff;
+}
+
+.doctors-section h2 {
+  font-size: 2em;
+  color: #1a3d5d;
+}
+
+.description {
+  margin: 10px 0 30px;
+  font-size: 1.1em;
+  color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doctors-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.doctor-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+  font-size: 1.2em;
+  color: #1a3d5d;
+  margin-bottom: 5px;
+}
+
+.doctor-title {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+  opacity: 1;
+}
+
+/* See More Doctors Button */
+.more-doctors-btn {
+  margin: 30px;
+  margin-left: 30vw;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.more-doctors-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* contact */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  background-color: #e0e7ff;
+  color: #5a67d8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.contact-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+.contact-info p {
+  margin: 5px 0 0;
+  color: #4a5568;
+}
+
+.contact-form {
+  width: 55%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+  .socials {
+    display: none;
+  }
+  header #main-nav ul > li:not(.mobile-visible) {
+    display: none;
+  }
+  .services-cont {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1124px) {
+  .reasons {
+    flex-direction: column;
+  }
+}
